@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <!-- Scientific Functions -->
+            <button onclick="calculator.scientificFunction('sin')">sin</button>
+            <button onclick="calculator.scientificFunction('cos')">cos</button>
+            <button onclick="calculator.scientificFunction('tan')">tan</button>
+            <button onclick="calculator.scientificFunction('sqrt')">√</button>
+
+            <button onclick="calculator.scientificFunction('log')">log</button>
+            <button onclick="calculator.power('2')">x²</button>
+            <button onclick="calculator.constant('pi')">π</button>
+            <button onclick="calculator.constant('e')">e</button>
+
+            <!-- Rest of the buttons remain the same -->
+            <button onclick="calculator.clearDisplay()">C</button>
+            <button onclick="calculator.appendOperator('/')">/</button>
+            <button onclick="calculator.appendOperator('*')">*</button>
+            <button onclick="calculator.backspace()">←</button>
+            
+            <button onclick="calculator.appendNumber('7')">7</button>
+            <button onclick="calculator.appendNumber('8')">8</button>
+            <button onclick="calculator.appendNumber('9')">9</button>
+            <button onclick="calculator.appendOperator('-')">-</button>
+            
+            <button onclick="calculator.appendNumber('4')">4</button>
+            <button onclick="calculator.appendNumber('5')">5</button>
+            <button onclick="calculator.appendNumber('6')">6</button>
+            <button onclick="calculator.appendOperator('+')">+</button>
+            
+            <button onclick="calculator.appendNumber('1')">1</button>
+            <button onclick="calculator.appendNumber('2')">2</button>
+            <button onclick="calculator.appendNumber('3')">3</button>
+            <button onclick="calculator.calculate()">=</button>
+            
+            <button onclick="calculator.appendNumber('0')" style="grid-column: span 2;">0</button>
+            <button onclick="calculator.appendNumber('.')">.</button>
+            <button onclick="calculator.appendOperator('(')">(</button>
+            <button onclick="calculator.appendOperator(')')">)</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

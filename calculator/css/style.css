@@ -1,0 +1,52 @@
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #f8f9fa;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #e9ecef;
+    transform: translateY(-1px);
+}
+
+/* Scientific function buttons */
+button:nth-child(-n+8) {
+    background: #e3f2fd;
+    font-weight: bold;
+}
+
+button:nth-child(-n+8):hover {
+    background: #bbdefb;
+}
